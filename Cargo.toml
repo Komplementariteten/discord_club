@@ -1,0 +1,12 @@
+[package]
+name = "discord_club"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.45", default-features = false, features = ["clock", "std"] }
+rusqlite = { version = "0.43.0", features = ["bundled"] }
+serenity = { version = "0.12.5", default-features = false, features = ["builder", "client", "gateway", "model", "http", "rustls_backend", "cache"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync"] }
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"
